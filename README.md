@@ -1,3 +1,3 @@
 # Web-Sekolah
 Awal
-Ini adalah web sekolah hasil ai
+Ini adalah web sekolah hasil simple
