@@ -1,8 +1,4 @@
-/* =====================================================
-   SMK Alpanza Bogor - main.js
-   ===================================================== */
-
-/* ---- Loading Screen ---- */
+// Loading Screen
 window.addEventListener('load', () => {
     setTimeout(() => {
         const screen = document.getElementById('loadingScreen');
@@ -14,7 +10,7 @@ window.addEventListener('load', () => {
 });
 
 
-/* ---- AOS Init ---- */
+// AOS Init
 document.addEventListener('DOMContentLoaded', () => {
     if (typeof AOS !== 'undefined') {
         AOS.init({
@@ -27,21 +23,21 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-/* ---- Navbar: scroll class + active link ---- */
+// Navbar: scroll class + active link
 (function () {
     const navbar     = document.getElementById('mainNav');
     const navLinks   = document.querySelectorAll('.nav-link[href^="#"]');
     const sections   = document.querySelectorAll('section[id], div[id]');
 
     function onScroll() {
-        /* shrink navbar */
+        // shrink navbar 
         navbar?.classList.toggle('scrolled', window.scrollY > 80);
 
-        /* scroll-to-top button */
+        // scroll-to-top button 
         const btn = document.getElementById('scrollTop');
         btn?.classList.toggle('show', window.scrollY > 320);
 
-        /* active nav link */
+        // active nav link 
         let current = '';
         sections.forEach(sec => {
             if (window.scrollY >= sec.offsetTop - 120) current = sec.id;
@@ -57,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
 })();
 
 
-/* ---- Smooth scroll for all anchor links ---- */
+// Smooth scroll for all anchor links
 document.addEventListener('click', (e) => {
     const link = e.target.closest('a[href^="#"]');
     if (!link) return;
@@ -69,7 +65,7 @@ document.addEventListener('click', (e) => {
     const offset = target.getBoundingClientRect().top + window.scrollY - 78;
     window.scrollTo({ top: offset, behavior: 'smooth' });
 
-    /* close mobile menu */
+    // close mobile menu 
     const collapse = document.querySelector('.navbar-collapse');
     if (collapse?.classList.contains('show')) {
         collapse.classList.remove('show');
@@ -77,13 +73,13 @@ document.addEventListener('click', (e) => {
 });
 
 
-/* ---- Scroll to Top button ---- */
+// Scroll to Top button
 document.getElementById('scrollTop')?.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
 
-/* ---- Counter Animation ---- */
+// Counter Animation
 (function () {
     const counters = document.querySelectorAll('.counter');
     let started    = false;
@@ -125,7 +121,7 @@ document.getElementById('scrollTop')?.addEventListener('click', () => {
 })();
 
 
-/* ---- Program Detail Modal ---- */
+// Program Detail Modal
 function showProgramDetail(program) {
     const map = { tkj: 'tkjModal', tkr: 'tkrModal', akl: 'aklModal' };
     const id  = map[program];
@@ -136,7 +132,7 @@ function showProgramDetail(program) {
 }
 
 
-/* ---- Gallery: open full image on click ---- */
+// Gallery: open full image on click
 document.querySelectorAll('.gallery-item').forEach(item => {
     item.addEventListener('click', () => {
         const src = item.querySelector('img')?.src;
