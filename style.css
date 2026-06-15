@@ -1,8 +1,4 @@
-/* =====================================================
-   SMK Alpanza Bogor - Stylesheet
-   ===================================================== */
-
-/* ---------- CSS Variables ---------- */
+/* CSS Variables */
 :root {
     --primary:       #1e40af;
     --primary-dark:  #1e3a8a;
@@ -22,7 +18,7 @@
     --transition:    0.3s ease;
 }
 
-/* ---------- Reset & Base ---------- */
+/* Reset & Base */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 html { scroll-behavior: smooth; }
@@ -34,7 +30,7 @@ body {
     line-height: 1.6;
 }
 
-/* ---------- Loading Screen ---------- */
+/* Loading Screen */
 .loading-screen {
     position: fixed;
     inset: 0;
@@ -83,7 +79,7 @@ body {
 .loader h4 { font-size: 1.3rem; font-weight: 700; margin-bottom: 4px; }
 .loader p  { font-size: 0.9rem; opacity: 0.7; }
 
-/* ---------- Top Bar ---------- */
+/* Top Bar */
 .top-bar {
     background: var(--primary-deep);
     color: rgba(255,255,255,0.85);
@@ -105,7 +101,7 @@ body {
     opacity: 0.3;
 }
 
-/* ---------- Navbar ---------- */
+/* Navbar */
 .navbar {
     background: rgba(30, 58, 138, 0.96) !important;
     backdrop-filter: blur(14px);
@@ -173,7 +169,7 @@ body {
     transform: translateY(-1px);
 }
 
-/* ---------- Hero ---------- */
+/* Hero */
 .hero {
     background:
         linear-gradient(135deg, rgba(15,23,42,0.88) 0%, rgba(30,64,175,0.82) 100%),
@@ -313,7 +309,7 @@ body {
     to   { opacity: 1; transform: translateY(0); }
 }
 
-/* ---------- Stats ---------- */
+/* Stats */
 .stats {
     background: linear-gradient(135deg, var(--primary-deep), var(--primary));
     color: var(--white);
@@ -357,7 +353,7 @@ body {
 .stat-suffix { font-size: 1.5rem; font-weight: 700; color: var(--secondary); }
 .stat-label  { font-size: 0.88rem; opacity: 0.75; font-weight: 500; letter-spacing: 0.02em; }
 
-/* ---------- Section Common ---------- */
+/* Section Common */
 .section-pad { padding: 80px 0; }
 .section-bg  { background: var(--gray-light); }
 
@@ -395,7 +391,7 @@ body {
     margin: 0 auto;
 }
 
-/* ---------- About Section ---------- */
+/* About Section */
 .about-img {
     border-radius: var(--radius-lg);
     width: 100%;
@@ -430,7 +426,7 @@ body {
 .about-check strong { display: block; font-size: 0.97rem; color: var(--dark); }
 .about-check span   { font-size: 0.88rem; color: var(--gray); }
 
-/* ---------- Program Cards ---------- */
+/* Program Cards */
 .program-card {
     background: var(--white);
     border-radius: var(--radius-md);
@@ -535,7 +531,7 @@ body {
     color: var(--white);
 }
 
-/* ---------- Facility Cards ---------- */
+/* Facility Cards */
 .feature-card {
     background: var(--white);
     border-radius: var(--radius-md);
@@ -567,7 +563,7 @@ body {
 .feature-card h4 { font-size: 1.05rem; font-weight: 700; color: var(--dark); margin-bottom: 8px; }
 .feature-card p  { color: var(--gray); font-size: 0.9rem; line-height: 1.6; }
 
-/* ---------- Gallery ---------- */
+/* Gallery */
 .gallery-item {
     position: relative;
     overflow: hidden;
@@ -603,7 +599,7 @@ body {
 .gallery-overlay h5 { color: var(--white); font-size: 1rem; font-weight: 700; margin-bottom: 3px; }
 .gallery-overlay p  { color: rgba(255,255,255,0.75); font-size: 0.82rem; margin: 0; }
 
-/* ---------- PPDB Section ---------- */
+/* PPDB Section */
 .ppdb-section {
     background: linear-gradient(135deg, var(--primary-deep) 0%, var(--primary) 100%);
     color: var(--white);
@@ -710,7 +706,7 @@ body {
     box-shadow: 0 8px 20px rgba(37,211,102,0.35);
 }
 
-/* ---------- Contact Section ---------- */
+/* Contact Section */
 .contact-card {
     background: var(--white);
     border-radius: var(--radius-md);
@@ -775,7 +771,7 @@ body {
     box-shadow: var(--card-shadow);
 }
 
-/* ---------- Modal ---------- */
+/* Modal */
 .modal-content {
     border-radius: var(--radius-lg);
     border: none;
@@ -832,7 +828,7 @@ body {
     gap: 10px;
 }
 
-/* ---------- Footer ---------- */
+/* Footer */
 footer {
     background: linear-gradient(180deg, var(--primary-deep) 0%, #060d1a 100%);
     color: var(--white);
@@ -925,7 +921,7 @@ footer .foot-contact-row i { color: var(--secondary); margin-top: 2px; font-size
     margin: 0;
 }
 
-/* ---------- Scroll to Top ---------- */
+/* Scroll to Top */
 .scroll-top {
     position: fixed;
     bottom: 28px;
@@ -951,11 +947,11 @@ footer .foot-contact-row i { color: var(--secondary); margin-top: 2px; font-size
 .scroll-top.show { opacity: 1; visibility: visible; }
 .scroll-top:hover { background: var(--primary); color: var(--white); transform: translateY(-4px); }
 
-/* ---------- Utilities ---------- */
+/* Utilities */
 .text-secondary-color { color: var(--secondary) !important; }
 .bg-primary-custom    { background: var(--primary) !important; }
 
-/* ---------- Responsive ---------- */
+/* Responsive */
 @media (max-width: 991px) {
     .navbar-collapse {
         background: rgba(15,23,42,0.97);
