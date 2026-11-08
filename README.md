@@ -11,7 +11,7 @@ informasi sekolah, program keahlian, fasilitas, berita, dan informasi PPDB.
 - [Bootstrap 5](https://getbootstrap.com/) untuk grid dan komponen.
 - [Bootstrap Icons](https://icons.getbootstrap.com/) untuk ikon.
 - [AOS](https://michalsnik.github.io/aos/) untuk animasi saat scroll.
-- Tanpa build step — cukup buka `index.html`.
+- Tanpa build step - cukup buka `index.html`.
 
 ## Menjalankan lokal
 
